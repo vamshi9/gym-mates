@@ -1,0 +1,13 @@
+# Dependency directories
+node_modules/
+
+# Build artifacts
+dist/
+
+# Environment configuration files
+.env
+
+# Editor and OS files
+.vscode/
+*.log
+.DS_Store

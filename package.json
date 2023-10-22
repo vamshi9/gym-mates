@@ -7,16 +7,19 @@
     "lint": "eslint .",
     "lint:fix": "eslint . --fix",
     "format": "prettier --write .",
-    "format:check": "prettier --check ."
+    "format:check": "prettier --check .",
+    "start-ngrok": "ngrok http 3000"
   },
   "dependencies": {
-    "@vendia/serverless-express": "^4.10.1",
+    "aws-sdk": "^2.1478.0",
     "cookie-parser": "~1.4.4",
     "debug": "~2.6.9",
     "express": "~4.16.1",
     "http-errors": "~1.6.3",
     "jade": "~1.11.0",
-    "morgan": "~1.9.1"
+    "morgan": "~1.9.1",
+    "serverless": "^3.35.2",
+    "twilio": "^4.19.0"
   },
   "devDependencies": {
     "@babel/cli": "^7.21.0",
@@ -29,6 +32,8 @@
     "eslint-plugin-import": "^2.27.5",
     "eslint-plugin-node": "^11.1.0",
     "eslint-plugin-prettier": "^4.2.1",
-    "prettier": "^2.8.8"
+    "ngrok": "^5.0.0-beta.2",
+    "prettier": "^2.8.8",
+    "serverless-offline": "^13.2.0"
   }
 }

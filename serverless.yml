@@ -20,3 +20,13 @@ functions:
       - httpApi:
           path: /register-subscriptions
           method: POST
+  webhook:
+    handler: functions/webhook/handler.sendMessage
+    events:
+      - httpApi:
+          path: /webhook
+          method: POST
+
+plugins:
+  - serverless-offline
+  
